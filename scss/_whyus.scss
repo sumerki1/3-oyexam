@@ -1,0 +1,40 @@
+.whyus{
+    max-width: 1242px;
+    height: 748px;
+    flex-shrink: 0;
+    & .whyus__text{
+        max-width: 447px;
+        height: 80px;
+        flex-shrink: 0;
+        & h4{
+            max-width: 327px;
+            height: 21px;
+            flex-shrink: 0;
+            @include text--title(20px, 'Exo 2');
+        }
+        & p{
+            max-width: 291px;
+            height: 41px;
+            flex-shrink: 0;
+            @include text--p();
+        }
+    }
+}
+.whyus__img{
+    max-width: 1242px;
+    height: 453.5px;
+    flex-shrink: 0;
+     background-image: url(../images/img2.png);
+    clip-path: polygon(0 0, 36% 0, 66% 100%, 0% 100%);
+    & h2{
+        max-width: 362px;
+        height: 109px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: 'Exo 2';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%; /* 60px */
+    }
+}

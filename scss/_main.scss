@@ -1,0 +1,48 @@
+@mixin text-title($fs, $ff){
+    color: #363738;
+    font-family:$ff;
+    font-size: $fs;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 65px */
+}
+@mixin text--p($fs,){
+    color: #6B6B6C;
+    font-family: 'PT Sans';
+    font-size: $fs;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.main{
+    max-width: 1240px;
+    height: 505px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    & .main__text{
+       max-width: 610px;
+       display: flex;
+       flex-direction: column;
+       gap: 40px;
+       & h1{
+        max-width: 610px;
+        height: 119px;
+        flex-shrink: 0;
+        @include text-p(52px, 'Exo 2')
+       }
+       & p{
+        max-width: 525px;
+        height: 66px;
+        flex-shrink: 0;
+        @include text--title(16px)
+       }
+       & .text__list{
+        max-width: 105px;
+        border-bottom: 1px solid #FFCE50;
+        & strong{
+            @include text-title(16px, 'PT Sans')
+        }
+       }
+    }
+}

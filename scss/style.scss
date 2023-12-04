@@ -1,0 +1,16 @@
+@import "reset";
+@import "main";
+@import "header";
+@import "whyus";
+@import "work";
+@import "costumers";
+*{
+    font-family: 'Exo 2';
+    font-family: 'PT Sans', sans-serif;
+}
+.container{
+    max-width: 1240px;
+    height: 9062px;
+    background-color: aqua;
+    margin: 0 auto;
+}
